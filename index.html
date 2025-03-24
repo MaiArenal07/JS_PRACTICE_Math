@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS_PRACTICE_Math</title>
+</head>
+
+
+
+<div class="container">
+ <h1>Math Methods</h1>
+	<details ontoggle="message1()">
+	<summary>
+		<u>instructions</u>
+		<br>
+		<i id="message"> </i>
+				</summary>
+				</details>
+				</div>
+
+
+
+<div class="container">
+	<input type="number" class="form-control" id="num1">
+		</div>
+			
+
+<div>
+	<button type="button" class="btn btn-success" onclick="RndResult()">round it off</button>
+		</div>
+
+
+<div class="container">
+	<kbd id="result1"> answer is....</kbd>
+		</div>
+
+
+
+<br>
+<script>
+ function message1() {
+ 	document.getElementById("message").innerHTML = "input one number then click the button below";
+ }
+
+function RndResult(){
+	var round = document.getElementById("num1").value;
+	document.getElementById("result1").innerHTML = Math.round(round);
+}
+</script>
+
+
+
+<body>
+
+
+
+
+</body>
+</html>
